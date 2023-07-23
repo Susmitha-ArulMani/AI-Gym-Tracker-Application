@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Gym Tracker </title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../static/img/plasma.png" rel="icon">
+  <link href="../static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../static/vendor/aos/aos.css" rel="stylesheet">
+
+  <link href="../static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="../static/css/style.css" rel="stylesheet">
+
+   <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<style>
+  a{
+    text-decoration: none;
+  }
+</style>
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center shadow">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1 class="text-light"><a href="/"><span>Gym Tracker</span></a></h1>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="/">HOME</a></li>
+          <li><a class="nav-link scrollto" href="#services">ABOUT</a></li>
+          <li><a class="nav-link scrollto" href="/gym_tracker">GYM TRACKER</a></li>
+          <li><a class="nav-link scrollto" href="/nutrition_suggestion">NUTRITION SUGGESTION</a></li>
+          <!-- <li><a class="nav-link scrollto" href="/login">SIGN IN</a></li>
+          <li><a class="nav-link scrollto" href="/signup">SIGN UP</a></li>
+          <li><a class="nav-link scrollto" href="/profile">MY PROFILE</a></li>
+          <li><a class="nav-link scrollto" href="/logout">LOGOUT</a></li> -->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1>The pain you feel today will be the strength you feel tomorrow</h1>
+          <h2>Nothing will work unless you do</h2>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img">
+          <img src="data:image/png;base64,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" width="600" height="600"class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+ 
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg justify-content-center w-100">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About Gym Tracker</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <!-- <h4 class="title"><a href="">Gym </a></h4> -->
+              <p class="description"> A software program or application that uses artificial intelligence (AI) technology to monitor and track gym-goers' workout progress, performance, and behavior. 
+              </p>
+            </div>
+          </div>
+
+          
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <!-- <h4 class="title"><a href="">BEST GYM IN INDIA</a></h4> -->
+              <p class="description"> One of the primary thing of AI gym tracking systems is their ability to accurately track and measure a user's workout performance, including reps and form, which is hard for humans to do consistently and accurately.</p> 
+          </div>
+        </div>
+
+       
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <!-- <h4 class="title"><a href="">Uses of Gym</a></h4> -->
+              <p class="description"> In addition to counting reps and estimating exercise form, gym tracking systems using AI can also provide personalized recommendations for nutrition based on the user's fitness goals and preferences. It alerts when target exercise count is reached. 
+               </p>
+            </div>
+          </div>
+        </div>
+
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+ 
+
+    <!-- ======= F.A.Q Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <!-- <h2>F.A.Q</h2> -->
+          <p>Frequently Asked Questions</p>
+        </div>
+
+        <ul class="faq-list" data-aos="fade-up" data-aos-delay="100">
+
+          <!-- <li>
+            <div data-bs-toggle="collapse" class="collapsed question" href="#faq1"> Is there any side effect of gym?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+              <ul>
+                <li>Excessive workouts on a daily basis can lead to fatigue, disturbing your overall functionality of your body</li>
+                <li>Such strenuous workouts also lead to longer resting periods which can badly affect your daily routine.</li>
+                <li>Frequent exercise may result in injuries as well, which results in a lack of motivation or a burn out.</li>
+              </ul>
+            </div>
+          </li> -->
+          <li>
+            <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">How to fix target count and exercise type?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+              <ul>
+                <li>Go to the "Gym Tracker" tab.</li>
+                <li>There, you will find two options to select the exercise type and target count.</li>
+                <li>To select the exercise type, click on the options provided.</li>
+                <li>To set the target count, manually type in the desired number.</li>
+                <li>Finally, click on the "Start Exercise" button to begin your workout.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">Does the AI gym tracker offer any nutritional or diet planning features?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+              <ul>
+                <li>Navigate to the "Nutrition Suggestion" tab.</li>
+                <li>You will find two options to manually enter your height and weight.</li>
+                <li>Click on the "Calculate" button to determine your Body Mass Index.</li>
+                <li>Once calculated, the personalized diet plan chart will be displayed on the screen.</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+    </section><!-- End F.A.Q Section -->
+
+
+
+
+
+  </main><!-- End #main -->
+
+  
+ 
+
+  <!-- Vendor JS Files -->
+  <script src="../static/vendor/aos/aos.js"></script>
+  <script src="../static/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../static/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../static/js/main.js"></script>
+  <!-- <script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "dd6e4126-85e3-4df8-a97b-18c4afe5213e", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "6dd6aee3-6aac-4af4-a77d-1f7757a5a1ed", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script> -->
+</body>
+
+</html>
